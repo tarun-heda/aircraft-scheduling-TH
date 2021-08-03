@@ -1,0 +1,86 @@
+.flight-item {
+    height: 70px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 7px 10px;
+    background-color: white;
+    box-shadow: 0 0 4px rgb(194, 192, 192);
+    cursor: pointer;
+    display: grid;
+
+    &:hover {
+        background-color: #f1eeee;
+        height: 68px;
+        width: 158px;
+        margin: 8px 11px;
+        grid-area: 1 / 1;
+    }
+}
+
+.flight-item-disabled {
+    background-color: #dadada;
+    pointer-events: none;
+}
+
+.flight-item-unselect {
+    &:hover {
+        background-color: #e8e8e8;
+        height: 68px;
+        width: 158px;
+        margin: 8px 11px;
+        grid-area: 1 / 1;
+    }
+}
+
+.flight-details-container {
+    grid-area: 1 / 1;
+}
+
+.flight-item:hover .select-flight {
+    display: block; 
+}
+
+.flight-item-unselect:hover .select-flight {
+    display: block; 
+    color: rgb(219, 92, 92);
+}
+
+.flight-item:hover .flight-details {
+    opacity: 0.5;
+}
+
+.flight-item:hover .flight-header {
+    opacity: 0.5;
+}
+
+.flight-header {
+    font-weight: bold;
+    height: 30px;
+}
+
+.flight-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow {
+    font-size: 40px;
+    margin-top: -15px
+}
+
+.select-flight {
+    display: none;
+    font-size: 30px;
+    margin-top: -50px;
+    opacity: 0.8;
+    text-align: center;
+    color: rgb(84, 177, 84);
+}

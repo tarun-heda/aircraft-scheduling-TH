@@ -1,0 +1,29 @@
+.timeline-bar {
+    width: 1300px;
+    height: 50px;
+    background-color: #c9c8c8;
+    margin-top: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px grey;
+    display:flex;
+    flex-direction: row;
+}
+
+.timeline-item {
+    border: 1px solid grey;
+    height: 44px;
+    margin-top: 2px;
+}
+
+.time-container {
+    margin-top: 15px;
+}
+
+.time-container :first-child {
+    margin-left: -50px;
+}
+
+.time-item {
+    text-align: left;
+    display: inline-block;
+}
