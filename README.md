@@ -4,10 +4,10 @@ Go to the following url to access the app in action: http://as-assignment.heroku
 Steps to run the application in local, if needed:
 
 1. Make sure you have node and npm installed on the machine.
-2. Open command window in the root folder and run command 'npm start' in the command window.
-3. This should start a local server on port 3000 in your default browser. If not, go to http://localhost:3000/ in your browser.
-4. You can now start using the app.
-5. If you see any error on the command window, run command 'npm install' and wait for installation to complete. Follow steps 2, 3 and 4 again.
+2. I have not included node_modules folder with the submission. You can install packages by using the command 'npm install' in the root folder on the command window.
+3. Wait for installation to complete. After that, run command 'npm start' in the same command window.
+4. This should start a local server on port 3000 in your default browser. If not, go to http://localhost:3000/ in your browser.
+5. You can now start using the app.
 
 
 
