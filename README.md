@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Go to the following url to access the app in action: http://as-assignment.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Steps to run the application in local, if needed:
 
-In the project directory, you can run:
+1. Make sure you have node and npm installed on the machine.
+2. I have not included node_modules folder with the submission. You can install packages by using the command 'npm install' in the root folder on the command window.
+3. Wait for installation to complete. After that, run command 'npm start' in the same command window.
+4. This should start a local server on port 3000 in your default browser. If not, go to http://localhost:3000/ in your browser.
+5. You can now start using the app.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Assumptions made:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Pagination is only done for 10 pages.
+2. Only one Aircraft 'GABCD' is considered.
+3. Used redux for state management.
+4. Disabling invalid flights on every selection (based on time and arrival/departure locations).
+5. Removing a selection will remove all the entries below them (except when you remove first entry) for rotation to remain consistent as a flight cannot teleport and cannot run empty.
+6. Added hover over effect to show what a click action will do.
+7. Utilization percentage is updated below aircraft name on every selection/removal.
+8. Turnaround time is always set to 20 mins and is shown in purple. 
+9. Remaining bar with no green and purple is unutilized. Set the background to grey to indicate that portion.
+10. Extended the timeline bar to full width for better visibility instead of just under rotation list as shown in the mockups.
+11. Test cases are not included to keep the effort within the limit.\
