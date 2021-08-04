@@ -7,7 +7,7 @@ export const removeRotationItem = (selectedItem, rotationList) => {
     });
 
     if (itemIndex === 0 || itemIndex === rotationList.length - 1) {
-        return [...rotationList].filter(item => item.id !== selectedItem.id)
+        return [...rotationList].filter(item => item.id !== selectedItem.id);
     } else {
         const newArray = [];
         rotationList.forEach((item, index) => {

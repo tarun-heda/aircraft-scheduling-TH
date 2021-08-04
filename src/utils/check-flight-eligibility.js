@@ -28,22 +28,5 @@ export const isFlightEligible = (flight, rotationList) =>{
         isEligible = checkLastItem(flight, lastItem);
     }
 
-    // rotationList.forEach((item, index) => {
-    //     if ((index === 0 || index === rotationList.length -1) && !stopProcessing) {
-    //         if (item.ident === flight.ident) {
-    //             isEligible = false;
-    //             stopProcessing = true;
-    //         }
-    //         if (!((flight.arrivaltime < item.arrivaltime && flight.departuretime < item.arrivaltime) ||
-    //             (flight.arrivaltime > item.departuretime && flight.departuretime > item.departuretime))) {
-    //             isEligible = false;
-    //         }
-    //         if ((flight.origin === item.destination && (flight.departuretime > item.arrivaltime + 20) && item.ident !== flight.ident) ||
-    //             (flight.destination === item.origin && (item.departuretime > flight.arrivaltime + 20) && item.ident !== flight.ident)) {
-    //             isEligible = true;
-    //         }
-    //     }
-    // });
-
     return isEligible;
 }

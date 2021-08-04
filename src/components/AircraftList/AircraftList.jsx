@@ -8,6 +8,7 @@ import './AircraftList.styles.scss';
 const AircraftList = ({ setAircraftData, aircraftData }) => {
 
   useEffect(() => {
+    document.title = 'Aircraft Scheduling';
     (async() => {
       const aircraftDetails = await getAircraftDetails('GABCD');
       setAircraftData(aircraftDetails.data);

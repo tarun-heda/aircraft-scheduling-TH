@@ -30,7 +30,7 @@ const Timeline = ({ rotationList, updateUtilizationPercentage }) => {
         <div className='timeline-container'>
             <div className='time-container'>
                 {timeValues.map(item => {
-                    return (<div className='time-item' style={{ width: timeItemWidth }}>{item.time}</div>)
+                    return (<div className='time-item' style={{ width: timeItemWidth }}>{item}</div>)
                 })}
             </div>
             <div className='timeline-bar' style={{ width: totalWidth }}>
@@ -60,6 +60,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     updateUtilizationPercentage: item => dispatch(updateUtilizationPercentage(item))
-  })
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Timeline);

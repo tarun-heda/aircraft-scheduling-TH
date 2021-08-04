@@ -45,6 +45,7 @@
 .flight-item-unselect:hover .select-flight {
     display: block; 
     color: rgb(219, 92, 92);
+    margin-top: -50px;
 }
 
 .flight-item:hover .flight-details {
@@ -78,8 +79,8 @@
 
 .select-flight {
     display: none;
-    font-size: 30px;
-    margin-top: -50px;
+    font-size: 20px;
+    margin-top: -40px;
     opacity: 0.8;
     text-align: center;
     color: rgb(84, 177, 84);

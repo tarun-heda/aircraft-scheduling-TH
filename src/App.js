@@ -1,6 +1,5 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-
 import store from './redux/store';
 import Header from './components/Header/Header';
 import AircraftList from './components/AircraftList/AircraftList';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import './FlightItem.styles.scss';
-import { updateRotationList, removeFromRotationList } from '../../redux/actions/FlightAction';
 import { isFlightEligible } from '../../utils/check-flight-eligibility';
+import { updateRotationList, removeFromRotationList } from '../../redux/actions/FlightAction';
+import './FlightItem.styles.scss';
 
 const FlightItem = ({ flight, rotationList, updateRotationList, removeFromRotationList, isRotationItem }) => {
 
